@@ -1,0 +1,40 @@
+* {
+  box-sizing: border-box; /*Makes the width and height include padding & border, for consistent sizing*/
+  margin: 0; /*Removes default margins of all elements to avoid unexpected spacing*/
+  padding: 0;/*Removes default padding to start fresh own spacing*/
+}
+
+body  {
+  font-family: "Outfit", sans-serif; /*Sets a clean modern typeface for all text on page*/
+  background-color: hsl(212, 45%, 89%);/*Gives the page a light blue background*/
+  display: flex; /*Turns the body into a flex container, to easily center content*/
+  justify-content: center;/*Horizontally centers .card within the page*/
+  align-items: center;/*Vertically centers .card within the page*/
+  height: 100vh;/*Makes the body take the full height of the viewport*/
+}
+
+.card {
+  background-color: white;/*Sets the cards background to white*/
+  padding: 20px;/*Adds space inside the card so content does not touch edges*/
+  border-radius: 15px;/*Rounds the corners of the card by 15px smooth look*/
+  text-align: center;/*Centers the text and image inside in the card*/
+  max-width: 300px;/*Limits the card's width to prevent it from getting to wide on large screens*/
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);/*Adds a subtle shadow*/
+}
+
+.card img {
+  width: 100%;/*Makes the image fill the width of the card keeping it responsive*/
+  border-radius: 10px;/*Rounds the image corners to match cards smooth style*/
+  margin-bottom: 20px;/*Adds space between the image and the text below*/
+}
+
+.card h1  {
+  font-size: 20px;/*Sets a clear, readable size for the card's title*/
+  margin-bottom: 15px;/*Adds space between the heading and paragraph*/
+  color: hsl(218, 44%, 22%);/*Uses dark blue color for strong contrast*/
+}
+
+.card p {
+  font-size: 15px;/*Slightly smaller text for description*/
+  color: hsl(220, 15%, 55%);/*Adds a soft grayish-blue for a calm look*/
+}
